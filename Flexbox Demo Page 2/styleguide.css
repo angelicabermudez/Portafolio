@@ -1,0 +1,57 @@
+/* * {
+    color: red;
+    margin: 0;
+    padding: 0;
+} */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0%;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-size: 1.12rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 0.87rem;
+}
+
+h5 {
+    font-size: 0.75rem;
+}
+
+h6 {
+    font-size: 0.62rem;
+}
+
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: gray;
+} 
+
+button:hover {
+    background-color: rgba(128, 128, 128, 0.518);
+}
+

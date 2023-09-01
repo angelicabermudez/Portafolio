@@ -1,0 +1,74 @@
+* {
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 30px;
+}
+
+/* HEADER  */
+
+
+.header-titulo h2 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+.contenido-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.header-links a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    margin-left: 40px;
+}
+
+.header-links a:first-of-type {
+    margin-left: 0px;
+}
+
+.header-contact button {
+    padding: 12px 32px;
+    border-radius: 1000px;
+    background-color: white;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+
+/* GALLERY */
+
+
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img1, .img2, .img4, .img6, .img8, .img9, .img10, .img12 {
+    height: 300px;
+    width: 25%;
+}
+
+.img3, .img5, .img7, .img11 {
+    height: 300px;
+    width: 50%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

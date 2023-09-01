@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans serif';
+}
+
+
+body {
+    background-color: #2A2345;
+}
+
+
+
+/* HEADER */
+
+
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.header-links a {
+    color: #BBBEDE;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.header-title h2 {
+    color: white;
+}
+
+
+.header-socials i {
+    color: #BBBEDE;
+    height: 40px;
+    width: 40px;
+}
+
+.header-icon {
+    display: none;
+}
+
+
+
+
+/* MAIN */
+
+
+
+.main-container {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+.main-title {
+    font-size: 78px;
+    line-height: 80px;
+}
+
+
+
+.main-text {
+    width: 40%;
+    margin-left: 60px;
+    z-index: 1;
+}
+
+
+.main-pic {
+    width: 60%;
+}
+
+.pic {
+    width: 100%;
+    height: 100%;
+}
+
+.main-button {
+    border-radius: 50rem;
+    background-color: #E0671F;
+    color: #F7F8E6;
+    margin-top: 17px;
+    font-size: 16px;
+    padding: 10px 25px;
+    font-weight: 100;
+}
+
+.main-paragraph {
+    font-size: 20px;
+    margin-top: 27px;
+    font-weight: 100;
+    color: #BBBEDE;
+}
+
+
+/* GALLERY */
+
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.imagenes {
+    height: 300px;
+    width: 25%;
+}
+
+.imagenes img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pic-responsive {
+    display: none;
+}
+
+
+
+/* RESPONSIVE IPAD */
+
+
+@media screen and (max-width: 834px) {
+
+    .header-links, .header-socials {
+        display: none;
+    }
+
+    .header-container, .header-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 35px;
+        margin-right: 35px;
+        
+    }
+
+    .header-title {
+        font-size: 32px;
+    }
+
+    .main-paragraph {
+        margin-top: 0;
+    }
+
+    .header-icon {
+        color: white;
+        font-size: 40px;
+    }
+
+    .main-container {
+        display: block;
+        margin-top: 124px;
+    }
+    
+    .main-text {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+
+    }
+
+    .main-title {
+        font-size: 80px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+
+    .imagenes {
+        width: 50%;
+        height: 400px;
+    }
+
+    .main-pic {
+        display: none;
+    }
+
+    .pic-responsive {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .pic-container {
+        width: 70%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .pic-container::before {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .gallery-container {
+        margin-top: 107px;
+    }
+}
+
+
+
+/* RESPONSIVE IPHONE */
+
+
+@media screen and (max-width: 393px) {
+
+
+    /* HEADER */
+
+
+    .header-container {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .header-title h2 {
+        font-size: 24px;
+    }
+
+    .header-icon {
+        margin: 0;
+    }
+
+
+    /* MAIN CONTENT */
+
+
+
+    .main-container {
+        width: 100%;
+        margin-top: 55px;
+    }
+
+    .main-text {
+       width: 100%;
+    }
+
+
+    .main-title {
+        font-size: 38px;
+        line-height: 110%;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .main-paragraph {
+        font-size: 1em;
+    }
+
+    .main-button {
+        padding: 15px 50px;
+        font-size: 20px;
+    }
+
+
+
+    /* RESPONSIVE PIC  */
+
+
+
+    .pic-responsive {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .pic-container {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .pic-container::before {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+
+    /* GALLERY */
+
+
+
+    .gallery-container {
+        margin-top: 68px;
+        width: 100%;
+    }
+
+
+    .imagenes {
+        width: 100%;
+    }
+
+}
